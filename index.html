@@ -11,28 +11,45 @@
 
     <!-- Estilo personalizado -->
     <style>
-      /* Fontes menores */
-      .reveal h1 {
-        font-size: 2.2em;
-      }
+        .reveal h1 {
+    font-size: 2em;
+  }
 
-      .reveal h2 {
-        font-size: 1.8em;
-      }
+  .reveal h2 {
+    font-size: 1.6em;
+  }
 
-      .reveal h3 {
-        font-size: 1.5em;
-      }
+  .reveal h3 {
+    font-size: 1.3em;
+  }
 
-      .reveal p, .reveal li {
-        font-size: 1.2em;
-      }
+  /* Texto e listas com fonte menor e espaçamento */
+  .reveal p,
+  .reveal li {
+    font-size: 1em;
+    line-height: 1.4;
+  }
 
-      /* Sombra nos textos para legibilidade */
-      .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal li {
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        color: white;
-      }
+  /* Evita quebra feia de texto longo */
+  .reveal ul {
+    padding-left: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  /* Texto com sombra para legibilidade */
+  .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal li {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+  }
+
+  /* Centraliza imagens de forma fluida */
+  .reveal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+  }
     </style>
 
   </head>
@@ -43,7 +60,7 @@
         <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
           <h1>Introdução à Cosmologia</h1>
           <h3>Telescopios Espaciais: Telescópio Hubble</h3>
-          <p>Apresentado por: Rossano</p>
+          <p>Desenvolvido por: Rossano</p>
         </section>
 
         <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
@@ -123,7 +140,7 @@
         </section>
 
         <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
-          <h2>Imagens capturadas pelo Hubble</h2>>
+          <h2>Imagens capturadas pelo Hubble</h2>
         </section>
 
         <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
@@ -153,13 +170,17 @@
         <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
           <h2>Referências</h2>
           <ul>
-            <li>NASA – Hubble Mission: https://www.nasa.gov/mission/hubble</li>
-            <li>ESA – Hubble Factsheet: https://www.spacetelescope.org</li>
-            <li>Ryden, B. (2017). *Introduction to Cosmology*. Cambridge Univ. Press.</li>
-            <li>Smith, R. W. (2003). *The Space Telescope*. Cambridge Univ. Press.</li>
-            <li>Perlmutter, S. et al. (1999). *Astrophysical Journal*, 517(2), 565–586.</li>
+            <li>NASA – Hubble Mission: https://www.nasa.gov/mission/hubble acessado em 08/07/2025</li>
+            <li>ESA – Hubble Factsheet: https://esahubble.org/ acessado em 08/07/2025</li>
+            <li>Revista Forbes, 35 Anos em Órbita: Confira 10 Imagens Emblemáticas do Telescópio Hubble :https://forbes.com.br/forbes-tech/2025/04/confira-10-imagens-emblematicas-do-telescopio-hubble/ acessado em 08/07/2025</li>
           </ul>
         </section>
+
+        <section data-background-image="https://cdn.esahubble.org/archives/images/screen/potw1802a.jpg" data-background-size="cover">
+          <h2>Referências</h2>
+          <ul>
+            <li>CNN Brasil, Hubble: saiba tudo sobre o telescópio que mudou a visão sobre o Universo,: https://www.cnnbrasil.com.br/tecnologia/hubble-saiba-tudo-sobre-o-telescopio-que-mudou-a-visao-sobre-o-universo/ acessado em 08/07/2025</li>
+          </ul>
 
       </div>
     </div>
@@ -167,7 +188,12 @@
     <!-- Reveal.js script -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
     <script>
-      Reveal.initialize();
+      Reveal.initialize({
+        transition: 'zoom',       // clima espacial
+        transitionSpeed: 'default',
+        backgroundTransition: 'convex' // animação entre fundos
+      });
     </script>
+
   </body>
 </html>
